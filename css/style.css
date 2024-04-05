@@ -108,7 +108,7 @@ main {
 
 .body-row-text {
     box-sizing: border-box;
-    width: 50vw;
+    width: 100%;
     height: 60vw;
     max-height: 80vh;
     padding: 10vw 5vw;
@@ -141,7 +141,15 @@ main {
     transition: all .15s ease-in-out;
 }
 
-/* Homepage */
+
+.imgdiv {
+    width: auto;
+    height: 60vw;
+    max-height: 80vh;
+    background-size: cover;
+}
+
+/* Specific main objects */
 
 #video-bg {
     height: 100%;
@@ -171,25 +179,21 @@ main {
     text-align: center;
 }
 
-#home-row-1 {
+#home-row-1, #about-row-1, #product-row-1 {
     height: 60vw;
     max-height: 80vh;
     background-color: #482e48;
 }
 
 #home-row-1 .imgdiv {
-    width: auto;
-    height: 60vw;
-    max-height: 80vh;
     background-image: url("../images/woman-laptop.jpg");
-    background-size: cover;
 }
 
 #home-row-1 h3 {
     text-align: right;
 }
 
-#home-row-2, #contact-row-2 {
+#home-row-2, #contact-row-2, #about-row-2 {
     height: 60vw;
     max-height: 80vh;
     background-color: #48482e;
@@ -211,6 +215,7 @@ main {
 
 #home-row-2 .body-row-text {
     position: absolute;
+    width: 60%;
     top: 6vh;
     left: 0;
     padding-top: 0vw;
@@ -238,18 +243,14 @@ main {
     right: 5vw;
 }
 
-#home-row-3 {
+#home-row-3, #about-row-3, #product-row-2 {
     height: 60vw;
     max-height: 80vh;
     background-color: #2e4848;
 }
 
 #home-row-3 .imgdiv {
-    width: auto;
-    height: 60vw;
-    max-height: 80vh;
     background-image: url("../images/businessmeeting.jpg");
-    background-size: cover;
 }
 
 #contact-row-2 form {
@@ -280,6 +281,18 @@ main {
 #contact-row-2 form button {
     font-family: "Mulish", sans-serif;
     font-size: 150%;
+}
+
+#about-row-1 .imgdiv {
+    background-image: url("../images/interface.jpg");
+}
+
+#about-row-2 .imgdiv {
+    background-image: url("../images/cybersecurity.jpg");
+}
+
+#product-row-1 .imgdiv {
+    background-image: url("../images/digital-product.jpg");
 }
 
 /* Footer */
